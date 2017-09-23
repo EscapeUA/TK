@@ -1,0 +1,139 @@
+page-news {
+    ion-header {
+        .header__logo {
+            .toolbar-background{
+                background:#426EDD;
+            }
+            .toolbar-title {
+                text-align: center;
+            }
+            .item-cover {
+                background:#426EDD;
+            }
+            img{
+                margin: 0 auto;
+                display: block;
+				max-width: 80%;
+            }
+    }
+
+         .data {
+            text-align: center;
+            color: #fff;
+            background:#426EDD;
+                p {
+                    color: #fff;
+                    padding: 10px 0;
+                    margin: 0;
+                    font-size: 1.4rem;
+                }
+        }  
+    }
+	.scroll-content {
+		background: #f4f4f4;
+		padding: 0!important;
+		.item-block {
+			margin-bottom: 8px;
+		    border-bottom: 0.5rem solid rgba(239, 245, 245, 1)!important;
+			&:nth-last-child(2) {
+			margin-bottom: 0!important;	
+			}
+			.item-inner {
+			border: none!important;
+		  }
+		}
+	}
+ ion-card {
+			position: relative;
+			overflow: hidden;
+			opacity: 1;
+			background-color: black!important;
+			margin: 0!important;
+			width: 100%!important;
+			
+		   img {
+			 transition: 0.3s;
+			 opacity: 0.6;
+		   }
+.info {
+		position: absolute;
+		top: 10%;
+		left: 5%;
+		max-width: 300px;
+	.card-title {
+				margin-top: 3%;
+				font-size: 1.65rem;
+				color: #fff;
+				text-shadow: 0 5px 7px #000;
+				line-height: 2.5rem;
+			}
+			.card-subtitle {
+				font-size: 1.2rem;
+				color: #fff;
+				text-transform: uppercase;
+				background-color: rgba(0, 0, 0, 0.6);
+				padding: 5px;
+			}
+		}
+	}
+	ion-list {
+		.buttonBlock {
+			background-color: white;
+			padding-bottom: 10px;
+			button {
+				text-transform: uppercase;
+				font-size: 1.9rem;
+				color: white;
+				background:#426EDD;
+				padding: 15px 80px;
+				display: block;
+    			margin: 0 auto;
+			}
+		}
+			
+		ion-item {
+			.newsInfo {
+				padding-bottom: 10px;
+			}
+			
+		
+			.input-wrapper {
+				align-items: flex-start;
+				.label {
+					white-space: inherit;
+				}
+				span {
+					font-size: 1.2rem;
+				}
+				p {
+					color: black;
+					margin: 10px 0;
+					font-size: 1.6rem;
+					line-height: 2rem;
+    				font-weight: 700;
+				}
+			}
+		}
+	}
+	.toolbar-ios ion-title {
+        padding: 0 50px 1px !important;
+    	padding-top: 20px!important;
+	}
+	ion-card.no__internet {
+	 text-align: center;
+     background-color: white!important;
+     color: black!important;
+	}
+	#network {
+		display: none;
+	}
+	
+ }
+ .label-icon{
+	max-width: 20px;
+    margin-left: 1rem;
+    position: relative;
+    top: 4px;
+}
+
+

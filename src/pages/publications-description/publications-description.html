@@ -1,0 +1,22 @@
+
+<ion-header>
+
+  <ion-navbar class="header__logo">
+    <div class="data">
+      <p>Публікації</p>
+    </div>
+    <ion-fab top right>
+      <button class="share__button" ion-fab (click)="shareOnSocial(publicationDetail.title, publicationDetail.title, publicationDetail.link)">
+          <ion-icon name="share-alt"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="publication__title">{{publicationDetail.title}}</p>
+  <p>{{checkDate(publicationDetail.date)}}</p>
+  <img src='{{publicationDetail.image}}'/>
+  
+  <div [innerHTML]="dom.bypassSecurityTrustHtml(publicationDetail.description)" class="publication"></div>
+</ion-content>

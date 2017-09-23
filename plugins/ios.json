@@ -1,0 +1,64 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-open-native-settings": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-background-mode": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-ftp": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        }
+    },
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        }
+    }
+}

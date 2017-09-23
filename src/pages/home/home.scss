@@ -1,0 +1,27 @@
+home {
+    .header__logo {
+        .toolbar-background{
+            background:#426EDD;
+        }
+        img{
+            margin: 0 auto;
+        }
+    }
+    ion-tabs{
+        .tab-button-text {
+            font-size: 1.8rem!important;
+        }
+        .tabbar{
+             background:#426EDD!important;
+        }
+      
+    } 
+    .tab-button{
+        color:#A1B7EE!important;
+        border-bottom: 0.3rem solid transparent;
+    }
+    .tab-button[aria-selected=true]{
+        color: #fff!important;
+        border-bottom: 0.3rem solid orange;
+    }
+}

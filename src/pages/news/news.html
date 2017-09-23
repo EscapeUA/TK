@@ -1,0 +1,50 @@
+
+<ion-header>
+
+  <ion-navbar class="header__logo">
+    <ion-title>
+  <img src="images/topkonotop_logo white.svg" alt="logo">
+    </ion-title>
+  </ion-navbar>
+    <div class="data">
+      <p>{{getLocalDate()}}</p>
+    </div>
+
+</ion-header>
+
+
+<ion-content padding >
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Потягнiть, щоб оновити"
+      refreshingSpinner="circles"
+      refreshingText="Зачекайте...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-spinner class="loader" [hidden]='this.isSpinnerHidden'></ion-spinner>
+
+  <ion-card *ngFor="let post of topPost" (click)="loadTopPost($event, post)">
+      <img src="{{post.image}}"/>
+      <div class="info">
+          <span class="card-subtitle">{{post.tag}}</span>
+          <div class="card-title">{{post.title}}</div>
+      </div>
+  </ion-card>
+
+  <ion-list (swipe)="swipeToNext($event)" no-lines>
+    <ion-item *ngFor="let news of newsJson" (click)="loadDescription($event, news)">
+      <!--<img *ngIf="news.options.pk == '1'" src='images/PR.svg'>-->
+
+      <div class="newsInfo">
+          <span>{{checkDate(news.date)}} {{news.time}}<img *ngIf="checkPR(news.options.pk)" src='images/PR.svg' class="label-icon"> <img *ngIf="checkPR(news.options.p)" src="images/P.svg" class="label-icon"></span>     
+          <p>{{news.title}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-infinite-scroll (ionInfinite) = "doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+</ion-content>

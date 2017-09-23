@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar class="header__logo">
+    <ion-title>
+       <img src="images/topkonotop_logo white.svg" alt="logo">
+    </ion-title>
+  </ion-navbar>
+    <div class="data">
+      <p>{{getLocalDate()}}</p>
+    </div>
+</ion-header>
+
+<ion-content padding class="card-background-page" no-lines (swipe)="swipeTo($event)">
+
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Потягнiть, щоб оновити"
+      refreshingSpinner="circles"
+      refreshingText="Зачекайте...">
+    </ion-refresher-content>
+</ion-refresher>
+
+<ion-spinner class="loader" [hidden]='this.isSpinnerHidden'></ion-spinner>
+
+<ion-list no-lines>
+    <ion-card *ngFor="let publication of publicationsJson" (click)="loadDescription($event, publication)">
+        <img src="{{publication.image}}"/>
+      
+        <div class="info">
+            <div class="card-subtitle">
+              <span>{{checkDate(publication.date)}} • {{publication.authorName}} </span>
+              <img *ngIf="checkPR(publication.options.pk)" src='images/PR.svg' class="label-publ"> <img *ngIf="checkPR(publication.options.p)" src="images/P.svg" class="label-publ">
+            </div>
+            <div class="card-title">{{publication.title}}</div>
+        </div>
+    </ion-card>
+</ion-list>
+
+<!-- <ion-infinite-scroll (ionInfinite) = "doInfinite($event)">
+  <ion-infinite-scroll-content></ion-infinite-scroll-content>
+</ion-infinite-scroll> -->
+</ion-content>

@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar class="header__logo">
+    <div class="data">
+        <p>Новини</p>
+    </div>
+    <ion-fab top right>
+      <button class="share__button" ion-fab (click)="shareOnSocial(newsDetail.title, newsDetail.title, newsDetail.link)">
+          <ion-icon name="share-alt"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="newsDetail.articleDescription != undefined; else receivedArticle">
+      <span>{{newsDetail.date}} {{newsDetail.time}}</span><span class="news_author">{{newsDetail.authorName}}</span>
+      <p class="news__item__title">{{newsDetail.title}}</p>
+      <img class="news__item__img"  src="{{newsDetail.image}}"/>
+    
+      <div [innerHTML]='dom.bypassSecurityTrustHtml(newsDetail.articleDescription)' class="news"></div>
+  </div>
+
+  <ng-template #receivedArticle>
+      <span>{{newsDetail.date}} {{newsDetail.time}}</span><span class="news_author">{{newsDetail.authorName}}</span>
+      <p class="news__item__title">{{newsDetail.title}}</p>
+      <img class="news__item__img"  src="{{newsDetail.image}}"/>
+    
+      <div [innerHTML]='dom.bypassSecurityTrustHtml(newsDetail.description)' class="news"></div>
+  </ng-template>
+</ion-content>

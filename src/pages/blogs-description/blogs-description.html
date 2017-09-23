@@ -1,0 +1,29 @@
+
+<ion-header>
+
+  <ion-navbar class="header__logo">
+    <div class="data">
+        <p>Блоги</p>
+    </div>
+    <ion-fab top right>
+      <button class="share__button" ion-fab (click)="shareOnSocial(blogDetail.title, blogDetail.title, blogDetail.link)">
+        <ion-icon name="share-alt"></ion-icon>
+    </button>
+    </ion-fab>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p class="data">{{blogDetail.date}}</p>
+  <h2>{{blogDetail.title}}</h2>
+  <ion-item no-lines>
+   <ion-avatar item-left class="icon-avatar">
+      <img src="{{blogDetail.authorPhoto}}">
+   </ion-avatar>
+      <p class="author">{{blogDetail.author}}</p>
+       <span>{{blogDetail.signature}}</span> 
+  </ion-item>
+
+  <div [innerHTML]='blogDetail.postText' class="contant"></div>
+</ion-content>

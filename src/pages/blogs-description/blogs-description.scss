@@ -1,0 +1,125 @@
+page-blogs-description {
+     .tab-button{
+        border-bottom: 0.3rem solid white!important;
+    }  
+    ion-header {
+        .header__logo {
+            .toolbar-background{
+                background:#426EDD;
+            }
+            .toolbar-title {
+                text-align: center;
+            }
+            .item-cover {
+                background:#426EDD;
+            }
+            img{
+                margin: 0 auto;
+                display: block;
+            }
+        
+    }
+    ion-item {
+        background:#426EDD!important;;
+        ion-datetime {
+            padding: 13px 0!important;
+            margin: auto;
+            color: #fff;
+            font-size: 1.2rem;
+            }
+        }
+     .data {
+            text-align: center;
+            color: #fff;
+            background:#426EDD;
+                p {
+                    color: #fff;
+                    padding: 10px 0;
+                    margin: 0;
+                    font-size: 1.4rem;
+                }
+                h2{
+                     font-weight: 700;
+                    line-height: 2.2rem;
+                }
+                ion-item.item {
+                    padding-left: 0px!important;
+                    .label-md{
+                        margin: 0px!important;
+                    }
+                }
+                
+                
+        }    
+    }
+    
+     .toolbar-title {
+            text-align: center;
+        }
+    .icon-avatar img {
+        width: 112px;
+        height: 112px;
+        object-fit: cover;
+     }
+     .ion-content>p {
+         color: black;
+         font-size: 1.6rem;
+     }
+    
+   
+     .author {
+         color: black;
+         font-size: 1.6rem;
+         font-weight: 600;
+         white-space: pre-line;
+     }
+     span {
+          font-size: 1.4rem;
+          white-space: pre-wrap;  
+
+     }
+    .contant {
+        font-size: 1.6rem;
+        white-space: pre-wrap;
+        *{
+          display: block;  
+        }
+    }
+     .toolbar-background {
+         background: #426EDD!important;
+     }
+     span.back-button-text.back-button-text-ios {
+         display: none;
+    }
+    .back-button.show-back-button {
+        color: white;
+    }
+    .fab {
+        width: 42px;
+        height: 42px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    button.share__button.fab.fab-ios {
+        width: 42px;
+        height: 65px;
+    }
+    .item-ios{
+        padding-left: 0px!important;
+    }
+    h2{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    p.data {
+        margin: 0;
+    }
+     .toolbar-content.toolbar-content-md .data p {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-right: 30px;
+    }
+    button.share__button.fab.fab-md {
+        top: -3px;
+    }
+}

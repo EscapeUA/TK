@@ -1,0 +1,64 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-ftp": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-open-native-settings": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "com.grodas.topkonotop"
+        },
+        "cordova-plugin-background-mode": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        }
+    },
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "ua.com.grodas.topkonotop"
+        }
+    }
+}

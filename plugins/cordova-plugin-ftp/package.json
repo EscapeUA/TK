@@ -1,0 +1,59 @@
+{
+  "_from": "cordova-plugin-ftp@^1.0.2",
+  "_id": "cordova-plugin-ftp@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-J4/e8kyqLymJWrupol7cMc1l1Ls=",
+  "_location": "/cordova-plugin-ftp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-ftp@^1.0.2",
+    "name": "cordova-plugin-ftp",
+    "escapedName": "cordova-plugin-ftp",
+    "rawSpec": "^1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ftp/-/cordova-plugin-ftp-1.0.3.tgz",
+  "_shasum": "278fdef24caa2f29895abba9a25edc31cd65d4bb",
+  "_spec": "cordova-plugin-ftp@^1.0.2",
+  "_where": "/Users/p35/Documents/TopKonotop/TopKonotopApp/node_modules",
+  "author": {
+    "name": "pax"
+  },
+  "bugs": {
+    "url": "https://github.com/xfally/cordova-plugin-ftp/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-ftp",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "This cordova plugin is created to use ftp (client) in web/js.",
+  "homepage": "https://github.com/xfally/cordova-plugin-ftp",
+  "keywords": [
+    "cordova",
+    "ftp",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-ftp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xfally/cordova-plugin-ftp.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
+}

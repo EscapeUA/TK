@@ -1,0 +1,119 @@
+page-news-description {
+  ion-header {
+        .header__logo {
+            .toolbar-background{
+                background:#426EDD;
+            }
+            .toolbar-title {
+                text-align: center;
+            }
+            .item-cover {
+                background:#426EDD;
+            }
+            img{
+                margin: 0 auto;
+                display: block;
+            }
+           
+        }
+     .data {
+            text-align: center;
+            color: #fff;
+            background:#426EDD;
+                p {
+                    color: #fff;
+                    padding: 10px 0;
+                    margin: 0;
+                    font-size: 1.4rem;
+                        line-height: normal;
+                }
+        }
+    ion-item {
+        background:#426EDD!important;
+        ion-datetime {
+            padding: 13px 0!important;
+            margin: auto;
+            color: #fff;
+            font-size: 1.2rem;
+            }
+        }      
+    }
+    span {
+        font-size: 1.2rem;
+    }
+    p {
+        color: black;
+        margin: 10px 0;
+        font-size: 1.6rem;
+        line-height: 25px;
+    }
+    .buttonBlock {
+			background-color: white;
+			padding-bottom: 10px;
+			button {
+				text-transform: uppercase;
+				font-size: 1.9rem;
+				color: white;
+				background:#426EDD;
+				padding: 15px 60px;
+				display: block;
+    			margin: 0 auto;
+			}
+	}
+    .news{
+        *{
+          display: block;  
+        }
+        img {
+            width: 100%!important;
+            height: auto!important;
+        }
+    }
+     span.back-button-text.back-button-text-ios {
+         display: none;
+    }
+    .toolbar-background {
+         background: #426EDD!important;
+     }
+     span.back-button-text.back-button-text-ios {
+         display: none;
+    }
+    .back-button.show-back-button {
+        color: white;
+    }
+        .fab {
+        width: 42px;
+        height: 42px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    button.share__button.fab.fab-ios {
+        width: 42px;
+        height: 65px;
+    }
+    .news__item__title{
+        color: black;
+        margin: 10px 0;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: 700;
+        margin-bottom: 0px;    
+    }
+    .news__item__img{
+        margin: 0.5rem 0px;
+    }
+    .news{
+            white-space: pre-line;
+    }
+    .news_author{
+        float: right;
+    }
+     .toolbar-content.toolbar-content-md .data p {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-right: 30px;
+    }
+    button.share__button.fab.fab-md {
+        top: -3px;
+    }
+}
